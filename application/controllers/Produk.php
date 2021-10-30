@@ -4,8 +4,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Produk extends CI_Controller
 {
 
-    var $column_order = array(null, 'nama_produk', 'harga_beli', 'harga_jual', 'qty', 'status', 'image', 'created_at', 'created_by', 'updated_at', 'updated_by'); //set column field database for datatable orderable
-    var $column_search = array('nama_produk', 'harga_beli', 'harga_jual', 'qty', 'status', 'image', 'created_at', 'created_by', 'updated_at', 'updated_by'); //set column field database for datatable searchable 
+    var $column_order = array(null, 'nama_produk', 'harga_beli', 'harga_jual', 'qty', 'status', 'img', 'kategori', 'created_at', 'created_by', 'updated_at', 'updated_by'); //set column field database for datatable orderable
+    var $column_search = array('nama_produk', 'harga_beli', 'harga_jual', 'qty', 'status', 'img', 'kategori', 'created_at', 'created_by', 'updated_at', 'updated_by'); //set column field database for datatable searchable 
     var $order = array('created_at' => 'asc'); // default order
 
 
@@ -47,6 +47,7 @@ class Produk extends CI_Controller
             $baris = array();
             $no = $no + 1;
             $baris[] = $no;
+            $baris[] = $row->kategori;
             $baris[] = $row->nama_produk;
             $baris[] = $row->harga_beli;
             $baris[] = $row->harga_jual;
@@ -97,6 +98,7 @@ class Produk extends CI_Controller
         $data['pengelolaan'] = 'Edit Produk';
         $data['title_page'] = 'Form ' . $data['pengelolaan'];
         $data['produk'] = $this->DataHandle->getAllWhere('ms_produk', '*', "status = '1' AND id = '" . $id . "'")->row_array();
+        $data['kategori'] = $this->DataHandle->getAllWhere('ms_kategori', '*', "status = '1'")->result();
         $this->load->view('back_end/produk/edit', $data);
     }
 

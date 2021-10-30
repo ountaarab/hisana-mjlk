@@ -27,6 +27,7 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
+                                    <th>Kategori</th>
                                     <th>Nama Produk</th>
                                     <th>Harga Beli</th>
                                     <th>Harga Jual</th>

@@ -20,8 +20,24 @@ $cont = $this->uri->segment(1);
                 <form method="POST" id="form-ajax" autocomplete="off" action="<?= base_url($cont . '/act/edit') ?>" enctype="multipart/form-data">
                     <div class="form-group row">
                         <div class="col-6">
+                            <label>Kategori</label>
+                            <select class="form-control" name="kategori">
+                                <?php
+                                $select_kategori = '';
+                                foreach ($kategori as $baris) :
+                                    if ($produk['kategori'] == $baris->nama_kategori) :
+                                        $select_kategori = ' selected';
+                                    endif;
+                                ?>
+                                    <option value="<?= $baris->nama_kategori ?>" <?= $select_kategori ?>><?= $baris->nama_kategori ?></option>
+                                <?php
+                                endforeach;
+                                ?>
+                            </select>
+                        </div>
+                        <div class="col-6">
                             <label>Nama Produk</label>
-                            <input type="text" class="form-control" name="id" value="<?= $produk['id'] ?>" required />
+                            <input type="hidden" class="form-control" name="id" value="<?= $produk['id'] ?>" required />
                             <input type="text" class="form-control" name="nama_produk" value="<?= $produk['nama_produk'] ?>" required placeholder="Masukkan Nama Produk.." />
                         </div>
                         <div class="col-6">
