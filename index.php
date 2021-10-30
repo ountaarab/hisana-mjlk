@@ -1,11 +1,10 @@
 <?php
 
 // OPEN DATA GLOBAL VARIABLE ==============
-define('APP_TITLE', 'Admin Open Data Karawang');
-define('OWNER_APPS', 'Diskominfo Kabupaten Karawang');
+define('APP_TITLE', 'Hisana Majalengka Apps');
+define('OWNER_APPS', 'Fazri Ramadhan');
 define('PATH_FILE', './uploads/image/');
 define('PATH_DATASET', './uploads/data/');
-define('API_OPEN_DATA', 'https://hub.karawangkab.go.id/api/v1/kepegawaian/detail_data_pegawai');
 // ========================================
 
 /**
