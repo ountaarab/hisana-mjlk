@@ -54,7 +54,7 @@
     </script>
     <?php
     $controller_name = $this->uri->segment(1);
-    $array_controller = ['Topik', 'User', 'Opd', 'Dataset', 'Produk'];
+    $array_controller = ['Topik', 'User', 'Opd', 'Dataset', 'Produk', 'Kategori'];
     if (in_array($controller_name, $array_controller)) :
     ?>
         <!-- Required datatable js -->
