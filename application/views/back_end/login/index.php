@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <title><?= APP_TITLE ?></title>
-    <meta content="Aplikasi satudata Kabupaten Karawang" name="description" />
-    <meta content="Diskominfo Karawang" name="author" />
-    <meta name="keywords" content="opendata, KABUPATEN, KARAWANG, dataset, DATA, COVID">
+    <meta content="Aplikasi POS Hisana Majalengka" name="description" />
+    <meta content="Fazri Ramadhan" name="author" />
+    <meta name="keywords" content="hisana, Hisana Majalengka, Hisana, Ayam Siap Saji, Makanan Siap Saji">
 
-    <meta property="og:site_name" content="Open Data Kabupaten Karawang" />
+    <meta property="og:site_name" content="Aplikasi POS Hisana Majalengka" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= base_url() ?>" />
-    <meta property="og:title" content="Open Data Karawang" />
-    <meta property="og:description" content="Dashboard Resmi Data Pelaporan Kasus Covid-19 di Kabupaten Karawang" />
+    <meta property="og:title" content="Hisana Majalengka" />
+    <meta property="og:description" content="Aplikasi POS Hisana Majalengka" />
     <link rel="shortcut icon" href="<?= base_url() ?>assets/images/opendata.png">
     <!-- Sweet-Alert  -->
     <script src="<?= base_url() ?>assets/plugins/sweet-alert2/sweetalert2.min.js"></script>
