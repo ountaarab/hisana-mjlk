@@ -1,0 +1,5 @@
+Master produk
+Master kategori
+Master stok
+Input pengeluaran 
+Transaksi harian
