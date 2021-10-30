@@ -2,9 +2,17 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title><?= $title_page; ?> - <?= APP_TITLE ?></title>
-        <meta content="Admin Dashboard" name="description" />
-        <meta content="Themesbrand" name="author" />
+        <title><?= APP_TITLE ?></title>
+        <meta content="Aplikasi POS Hisana Majalengka" name="description" />
+        <meta content="Fazri Ramadhan" name="author" />
+        <meta name="keywords" content="hisana, Hisana Majalengka, Hisana, Ayam Siap Saji, Makanan Siap Saji">
+
+        <meta property="og:site_name" content="Aplikasi POS Hisana Majalengka" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="<?= base_url() ?>" />
+        <meta property="og:title" content="Hisana Majalengka" />
+        <meta property="og:description" content="Aplikasi POS Hisana Majalengka" />
+        <link rel="shortcut icon" href="<?= base_url() ?>assets/images/opendata.png">
         <link rel="shortcut icon" href="assets/images/favicon.ico">
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
