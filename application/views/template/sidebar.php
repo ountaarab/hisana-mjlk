@@ -32,12 +32,12 @@
                 endif;
                 ?>
 
-                <li class="menu-title">Open Data</li>
+                <li class="menu-title">Transaksi</li>
 
                 <li>
-                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Open Data <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
+                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-buffer"></i> <span> Input Data <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
                     <ul class="submenu">
-                        <li><a href="<?= base_url('Dataset') ?>">Dataset</a></li>
+                        <li><a href="<?= base_url('Laporan_harian') ?>">Input Laporan Harian</a></li>
                     </ul>
                 </li>
             </ul>
